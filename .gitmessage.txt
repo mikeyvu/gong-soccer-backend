@@ -1,0 +1,7 @@
+feat(auth): model users, profiles, teams, and roles with JPA mappings
+
+Add core entities and relationships
+to support upcoming authentication and authorization flows.
+
+Testing:
+- not run (not added yet)
