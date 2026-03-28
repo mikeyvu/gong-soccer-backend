@@ -1,0 +1,16 @@
+# Commit message template
+# Format: <type>(<scope>): <summary>
+#
+# Example:
+# feat(about): improve about section readability
+#
+# Types: feat, fix, refactor, style, docs, test, chore
+
+<type>(<scope>): <short summary>
+
+# What changed and why?
+-
+-
+
+# Breaking change: yes/no
+# Closes: #issue-number

@@ -1,8 +1,15 @@
 package com.mikey.gongsoccer.service;
 
-import com.mikey.gongsoccer.dto.request.SignupRequest;
-import com.mikey.gongsoccer.dto.response.AuthResponse;
+import com.mikey.gongsoccer.dto.request.LoginUserDto;
+import com.mikey.gongsoccer.dto.request.SignupUserDto;
+import com.mikey.gongsoccer.dto.request.VerifyUserDto;
+import com.mikey.gongsoccer.dto.response.SignupResponse;
+import com.mikey.gongsoccer.entity.user.UserEntity;
 
 public interface AuthService {
-    AuthResponse signup(SignupRequest request);
+    SignupResponse signup(SignupUserDto request);
+    public UserEntity authenticate(LoginUserDto input);
+    public void verifyUser(VerifyUserDto input);
+    public void resendVerificationCode(String email);
+    public void sendVerificationEmail(UserEntity user);
 }
